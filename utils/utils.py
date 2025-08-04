@@ -143,7 +143,7 @@ def start_vllm_server(model_path: str, model_name: str, port: int, gpu: int = 1)
         f'--model={model_path}',
         f"--served-model-name={model_name}",
         f'--tensor-parallel-size={gpu}',
-        f"--gpu-memory-utilization=0.85",
+        f"--gpu-memory-utilization=0.8",
         f'--port={port}',
         f'--trust-remote-code',
         f"--enforce-eager"

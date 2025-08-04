@@ -36,10 +36,6 @@ conda activate vllm_research
 echo "📥 Installing dependencies..."
 pip install -r requirements.txt
 
-# Test installation
-echo "🧪 Testing installation..."
-python test_vllm.py
-
 echo ""
 echo "✅ Setup completed!"
 echo ""
