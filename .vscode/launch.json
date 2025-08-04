@@ -1,0 +1,30 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Generate with Persona",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/generate_with_persona/generate_with_persona.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "args": [
+                "--input_file", "dataset/processed_dataset/NPI.jsonl",
+                "--output_folder", "results/",
+                "--persona_jsonl", "dataset/persona_dataset/example_persona.jsonl",
+                "--port", "8000",
+                "--api_base", "http://localhost:8000/v1",
+                "--model_name", "Qwen/Qwen2.5-0.5B-Instruct",
+                "--model_path", "Qwen/Qwen2.5-0.5B-Instruct",
+                "--max_tokens", "10",
+                "--temperature", "0.7",
+                "--threads", "10",
+                "--gpu", "1"
+            ],
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            },
+            "justMyCode": false
+        }
+    ]
+} 
